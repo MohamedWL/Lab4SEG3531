@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mohamed's Barbershop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+</head>
+
+
+<body style="background-color:#ebebe0;">
+
+  
+    <div class="container p-3 my-3 bg-info text-white">
+		<img src="haircut.png" alt="Card image">
+        <h1 >Welcome to Mohamed's barbershop </h1>
+		<div class="form-group row">
+			<div class="col">
+				<a href="#imagee" data-toggle="tooltip" title="Move to location section"><button type="button" class="btn btn-light">Our location</button><a>
+			</div>
+			<div class="col">
+				<a href="#offerr" data-toggle="tooltip" title="Move to see our offer"><button type="button" class="btn btn-light">Our offer</button></a>
+			</div>
+			<div class="col">
+				<a href="#pricin" data-toggle="tooltip" title="Move to see the prices"><button type="button" class="btn btn-light">Our Pricing</button></a>
+			</div>
+			<div class="col">
+				<a href="#appoint" data-toggle="tooltip" title="Move to book an appointment"><button type="button" class="btn btn-light">Booking</button></a>
+			</div>
+			<div class="col">
+				<a href="#teamm"><button type="button" class="btn btn-light">Out Team</button></a>
+			</div>
+			<div class="col">
+				<a href="#boutus"><button type="button" class="btn btn-light">About us</button></a>
+			</div>
+		</div>
+    </div>
+
+
+	
+	<div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Info COVID! </strong>The Barbershop is now open according to the government, please make a reservation to help us keep our work environment safe.
+    </div>
+
+	<div class="container">
+		<img src="coif.jpg" id="imagee" style="width:100%; margin-left:1px;">
+		<div class="text-block">
+			<h4>Haircut Salon</h4>
+			<p>777 King Edward St.</p>
+		</div>
+	</div>
+	
+	<style>
+	.container {
+		position: relative;
+		font-family: Century Gothic;
+	}
+	.text-block {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		color: white;
+		background-color: #0077b3;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	</style>
+	<br>
+	
+	<div class="container" id="offerr">
+        <h2>Our offer</h2> 
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Your options</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+						<div class="card-deck">
+							<div class="card bg-info" style="width:50%;">
+								<img class="card-img-top" src="cut.jpg">
+								<div class="card-body">
+									<h4 class="card-title" style="text-align:center;">Haircut</h4>
+								</div>
+							</div>
+							<div class="card bg-info" style="width:50%;">
+								<img class="card-img-top" src="trim.jpg">
+								<div class="card-body">
+									<h4 class="card-title" style="text-align:center;">Trimming</h4>
+								</div>
+							</div>
+							<div class="card bg-info" style="width:50%;">
+								<img class="card-img-top" src="color.jpg">
+								<div class="card-body">
+									<h4 class="card-title" style="text-align:center;">Coloring</h4>
+								</div>
+							</div>
+							<div class="card bg-info" style="width:50%;">
+								<img class="card-img-top" src="scalp.jpg">
+								<div class="card-body">
+									<h4 class="card-title" style="text-align:center;">Scalp treatment</h4>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+    <div class="container" id="pricin">
+        <h2>Our Pricing</h2>          
+        <table class="table table-info">
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Pricing</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Haircut</td>
+                <td>From 40$</td>
+            </tr>
+            <tr>
+                <td>Trimming</td>
+                <td>From 30$</td>
+            </tr>
+            <tr>
+                <td>Coloring</td>
+                <td>From 70$</td>
+            </tr>
+			<tr>
+                <td>Scalp treatment</td>
+                <td>From 30$</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+
+    <div class="container" id="appoint">
+        <h2>Book an appointment</h2> 
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+						<div class="dropdown">
+							<label for="dateTimeInput" class="col-2 col-form-label">What are you looking for:</label>
+							<button type="button" class="btn btn-muted dropdown-toggle" data-toggle="dropdown"></button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item">Haircut</a>
+								<a class="dropdown-item">Trimming</a>
+								<a class="dropdown-item">Coloring</a>
+								<a class="dropdown-item">Scalp treatment</a>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <form action="/action_page.php">
+							<div class="form-group">
+							  <label>Full Name:</label>
+							  <input type="text" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>Phone number:</label>
+							  <input type="text" class="form-control">
+							</div>
+							<div class="form-group">
+							  <label>E-mail:</label>
+							  <input type="text" class="form-control">
+							</div>
+							<button type="submit" class="btn btn-info">Submit</button>
+						</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<br>
+	
+	
+	<div class="container" id="teamm">
+        <h2>Our team</h2> 
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Our members</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+						<div class="card-deck">
+							<div class="card bg-info" style="width:50%;">
+								<img class="card-img-top" src="staff1.jpg">
+								<div class="card-body">
+									<p2><strong>Edna Connor</strong></p2>
+									<br>
+									<p2>Senior stylist</p2>
+								</div>
+							</div>
+							<div class="card bg-info" style="width:50%;">
+								<img class="card-img-top" src="staff2.png">
+								<div class="card-body">
+									<p2><strong>Anna Chapman</strong></p2>
+									<p2>Intermediate stylist</p2>
+								</div>
+							</div>
+							<div class="card bg-info" style="width:50%;">
+								<img class="card-img-top" src="staff3.png">
+								<div class="card-body">
+									<p2><strong>Cienna Mckenzie</strong></p2>
+									<p2>Esthetician</p2>
+								</div>
+							</div>
+							<div class="card bg-info" style="width:50%;">
+								<img class="card-img-top" src="staff4.png">
+								<div class="card-body">
+									<p2><strong>John Doe</strong></p2> 
+									<br>
+									<p2>New talent stylist</p2>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="container-md p-3 my-3 border bg-light text-success" id="boutus">
+        <h2 style="color:#0077b3;">About us </h2>
+        <p style="color:#0077b3;">Wether you want to try a new haircut, trim you beard, colour your hair or get yourself a scalp treatment our team will always make sure you leave our store with a smile on your face.</mark></p>
+    </div>
+	
+	<p>Site created by Mohamed Labzagui</p>
+
+</body>
+</html>
